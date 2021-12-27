@@ -37,4 +37,4 @@ jobs:
         python convert.py
     - name: Test with pytest
       run: |
-        pytest --tb=no problem/test/test_grading.py
+        pytest problem/test/test_grading.py
