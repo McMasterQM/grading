@@ -5,7 +5,7 @@ from scipy.integrate import quad
 from functools import partial
 
 
-def test_total_mark_xc(x, n, a):
+def test_total_mark_xc():
     """testing first function
     """
     np.testing.assert_almost_equal(total_mark_xc([100, 100, 100, 100], 0), 80)
@@ -17,7 +17,7 @@ def test_total_mark_xc(x, n, a):
     assignments = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     np.testing.assert_almost_equal(total_mark_xc(assignments, 50, 700), 70.03030303030303)
 
-def test_total_mark_xc_mult(assignments, exam, extra_credit_pages):
+def test_total_mark_xc_mult():
     """
     testing second function
     """
